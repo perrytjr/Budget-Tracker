@@ -1,21 +1,19 @@
+const staticFilesToPreCache = [
+  "/",
+  "/indexedDB.js",
+  "/index.js",
+  "/manifest.webmanifest",
+]
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
-const iconSizes = ["72", "96", "128", "144", "152", "192", "384", "512"];
-const iconFiles = iconSizes.map(
-  (size) => `/assets/images/icons/icon-${size}x${size}.png`
-);
 
-const staticFilesToPreCache = [
-  "/",
-  "/app.js",
-  "/favicon.ico",
-  "/manifest.webmanifest",
-].concat(iconFiles);
+
+
 
 
 // install
-self.addEventListener("install", function (evt) {
+self.addEventListener("install", function(evt) {
   evt.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       console.log("Your files were pre-cached successfully!");
@@ -27,7 +25,7 @@ self.addEventListener("install", function (evt) {
 });
 
 // activate
-self.addEventListener("activate", function (evt) {
+self.addEventListener("activate", function(evt) {
   evt.waitUntil(
     caches.keys().then(keyList => {
       return Promise.all(
@@ -45,8 +43,8 @@ self.addEventListener("activate", function (evt) {
 });
 
 // fetch
-self.addEventListener("fetch", function (evt) {
-  const { url } = evt.request;
+self.addEventListener("fetch", function(evt) {
+  const {url} = evt.request;
   if (url.includes("/all") || url.includes("/find")) {
     evt.respondWith(
       caches.open(DATA_CACHE_NAME).then(cache => {
