@@ -66,9 +66,9 @@ function checkDatabase(){
                 const store = transaction.objectStore("pending");
 
                 store.clear();
-            })
+            });
         }
-    }
+    };
 }
 
 window.addEventListener("online", checkDatabase);
