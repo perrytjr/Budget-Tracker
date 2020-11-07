@@ -3,9 +3,9 @@
 ## Overview 
 This application, Workout-Tracker will allow a user to be able to view, create, and track daily workouts. The user will also be able to log multiple exercises in a workout on a given day. The tracker allows the user to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, it will track the distance traveled.
 
-![](https://github.com/perrytjr/Workout-Tracker/blob/main/public/img/Screen%20Shot%202020-10-31%20at%2012.47.58%20PM.png)
+![](https://github.com/perrytjr/Budget-Tracker/blob/main/public/img/Screen%20Shot%202020-11-07%20at%2010.02.25%20AM.png)
 
-![](https://github.com/perrytjr/Workout-Tracker/blob/main/public/img/Screen%20Shot%202020-10-31%20at%2012.48.40%20PM.png)
+![](https://github.com/perrytjr/Budget-Tracker/blob/main/public/img/Screen%20Shot%202020-11-07%20at%2010.02.50%20AM.png)
 
 
 
