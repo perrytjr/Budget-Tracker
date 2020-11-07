@@ -1,21 +1,30 @@
 # Budget-Tracker
 
 ## Overview 
-This application, Workout-Tracker will allow a user to be able to view, create, and track daily workouts. The user will also be able to log multiple exercises in a workout on a given day. The tracker allows the user to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, it will track the distance traveled.
+The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+
+## User Story
+
+A traveler will be able to track his/her withdrawals and deposits with or without a data/internet connection
+so that their account balance is accurate when traveling.
+
 
 ![](https://github.com/perrytjr/Budget-Tracker/blob/main/public/img/Screen%20Shot%202020-11-07%20at%2010.02.25%20AM.png)
 
 ![](https://github.com/perrytjr/Budget-Tracker/blob/main/public/img/Screen%20Shot%202020-11-07%20at%2010.02.50%20AM.png)
 
+## License:
 
+GNU General Public License v3.0
 
 
 ## How it functions
- This application uses Express, Node.js, MongoDB with Mongoose, and deployed via Heroku. 
+ This application is a downloadable PWA or can run in your browser. 
 
 ## Credits
 [Matthew Rodgers](https://github.com/Rogers-Development-Services)
-He helped me trouble shoot my heroku connection! 
+[Mando Estrada](https://github.com/Mando619)
+[Plover Brown](https://www.github.com/rebrasshopper)
 
 ## Link
 
